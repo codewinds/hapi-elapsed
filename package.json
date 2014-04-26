@@ -1,0 +1,22 @@
+{
+  "name": "hapi-elapsed",
+  "description": "hapi-elapsed - Hapi plugin which logs elapsed time",
+  "version": "0.0.1",
+  "author": "Jeff Barczewski <info@codewinds.com>",
+  "repository": { "type": "git", "url": "http://github.com/codewinds/hapi-elapsed.git" },
+  "bugs" : { "url": "http://github.com/codewinds/hapi-elapsed/issues" },
+  "licenses": [{ "type": "MIT", "url" : "http://github.com/codewinds/hapi-elapsed/raw/master/LICENSE" }],
+  "main": "lib/hapi-elapsed",
+  "engines": { "node": ">=0.10" },
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+    "test": "mocha test/*.mocha.js"
+  },
+  "keywords": [
+    "hapi",
+    "plugin"
+  ]
+}
