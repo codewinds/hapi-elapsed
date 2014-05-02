@@ -13,15 +13,17 @@ npm install ## install dependent node modules
 ## Usage
 
 ```javascript
-var plugins = {
-  'hapi-elapsed': {}
-};
+// listen for our new elapsed log event
 server.pack.events.on('log', function (event, tags) {
   if (tags.elapsed) {
     // do something with the elapsed event
     console.log('elapsed', event);
   }
 });
+
+var plugins = {
+  'hapi-elapsed': {}
+};
 server.pack.require(plugins, function (err) {
   if (err) { throw err; }
   // plugin required, start server
@@ -30,7 +32,7 @@ server.pack.require(plugins, function (err) {
 
 ## Goals
 
- - compute elapsed time form beginning of request to the end of the response
+ - compute elapsed time from the beginning of request to the end of the response
  - emit log event with elapsed time
 
 ## Why
