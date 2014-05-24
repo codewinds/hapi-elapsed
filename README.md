@@ -37,7 +37,7 @@ server.pack.require(plugins, function (err) {
 
 ## Why
 
-A simple functional Hapi plugin
+A simple functional Hapi plugin which calculates and logs elapsed time
 
 ## Get involved
 
