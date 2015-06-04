@@ -8,15 +8,12 @@ describe('hapi-elapsed', function () {
 
   beforeEach(function (done) {
     server = new Hapi.Server();
-    var plugins = {
-      '../': {}
-    };
-    server.pack.require(plugins, done);
+    server.connection();
+    server.register(require('../lib/hapi-elapsed'), done);
   });
 
   function injectAndGetElapsedEvent(next) {
-    server.pack.events
-      .on('log', function (event, tags) {
+    server.on('log', function (event, tags) {
         if (tags.elapsed) {
           next(event);
         }
