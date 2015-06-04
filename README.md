@@ -4,7 +4,7 @@
 
 ## Installation
 
-Requires node.js >= 0.10
+Requires node.js >= 0.12
 
 ```bash
 npm install ## install dependent node modules
