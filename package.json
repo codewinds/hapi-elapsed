@@ -1,7 +1,7 @@
 {
   "name": "hapi-elapsed",
   "description": "hapi-elapsed - Hapi plugin which logs elapsed time",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Jeff Barczewski <info@codewinds.com>",
   "repository": {
     "type": "git",
@@ -18,15 +18,15 @@
   ],
   "main": "lib/hapi-elapsed",
   "engines": {
-    "node": ">=0.10"
+    "node": ">=0.12"
   },
   "dependencies": {
-    "hoek": "~2.1.0"
+    "hoek": "^2.14.0"
   },
   "devDependencies": {
-    "chai": "~1.9.1",
-    "mocha": "~1.18.2",
-    "hapi": "~4.1.0"
+    "chai": "^3.0.0",
+    "hapi": "^8.6.0",
+    "mocha": "^2.2.5"
   },
   "scripts": {
     "test": "mocha test/*.mocha.js"
