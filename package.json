@@ -21,7 +21,7 @@
     "node": ">=0.12"
   },
   "dependencies": {
-    "hoek": "^2.14.0"
+    "hoek": "^4.2.1"
   },
   "devDependencies": {
     "chai": "^3.0.0",
